@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Culture of Uttar Pradesh | Chalo UP Ghuma De</title>
+    <meta name="description" content="Explore Uttar Pradesh culture through festivals, languages, traditions and local customs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandNavy: '#081b2b',
+              brandGold: '#d4a94d',
+              brandCream: '#f7f1e8'
+            },
+            boxShadow: {
+              luxe: '0 24px 48px rgba(8, 27, 43, 0.14)'
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="stylep.css" />
+  </head>
+  <body class="bg-[#f7f1e8] text-slate-800 antialiased">
+    <header class="site-header">
+      <div class="container nav-wrap mx-auto max-w-7xl">
+        <div class="brand">Chalo <span>UP</span> Ghuma De</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="city-details.html?city=varanasi">Cities</a>
+          <a href="spirituality.html">Spirituality</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#contact" class="nav-btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="blog-page">
+      <div class="container blog-hero">
+        <div>
+          <span class="tag">Culture</span>
+          <h1>The living heritage of Uttar Pradesh</h1>
+          <p>From classical music and folk traditions to colorful festivals and a timeless love for hospitality, UP offers a deeply rooted cultural experience.</p>
+          <div class="blog-cta">
+            <a href="index.html#booking" class="btn btn-primary">Plan My Trip</a>
+            <a href="index.html" class="btn btn-secondary">Back Home</a>
+          </div>
+        </div>
+        <div class="blog-panel">
+          <h3>Highlights</h3>
+          <ul class="experience-list">
+            <li>Festivals like Diwali, Holi and Navratri</li>
+            <li>Classical music and ghazal traditions</li>
+            <li>Handicrafts and embroidered textiles</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container blog-grid">
+        <article class="blog-card">
+          <div class="blog-card-visual">🎭</div>
+          <div class="blog-card-content">
+            <div class="blog-tag">Tradition</div>
+            <h3>Festivals & Ceremonies</h3>
+            <p>Colorful celebrations bring communities together with faith, music, dance and local cuisine.</p>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-visual">🪔</div>
+          <div class="blog-card-content">
+            <div class="blog-tag">Lifestyle</div>
+            <h3>Dress & Art</h3>
+            <p>Handcrafted fabrics, embroidered garments and artistic forms reflect the rich identity of the region.</p>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-visual">🍛</div>
+          <div class="blog-card-content">
+            <div class="blog-tag">Cuisine</div>
+            <h3>Food & Hospitality</h3>
+            <p>From biryani to chaat, food is central to cultural celebrations and everyday warmth.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

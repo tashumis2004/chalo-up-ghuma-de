@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Details | Chalo UP Ghuma De</title>
+    <meta name="description" content="Explore city details, best times to visit and travel highlights across Uttar Pradesh." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandNavy: '#081b2b',
+              brandGold: '#d4a94d',
+              brandCream: '#f7f1e8'
+            },
+            boxShadow: {
+              luxe: '0 24px 48px rgba(8, 27, 43, 0.14)'
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="stylep.css" />
+  </head>
+  <body class="bg-[#f7f1e8] text-slate-800 antialiased">
+    <header class="site-header">
+      <div class="container nav-wrap mx-auto max-w-7xl">
+        <div class="brand">Chalo <span>UP</span> Ghuma De</div>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Places</button>
+            <div class="nav-dropdown-menu" aria-label="City list">
+              <a href="city-details.html?city=taj">Taj Mahal</a>
+              <a href="city-details.html?city=varanasi">Varanasi</a>
+              <a href="city-details.html?city=lucknow">Lucknow</a>
+              <a href="city-details.html?city=ayodhya">Ayodhya</a>
+            </div>
+          </div>
+          <a href="index.html#experiences">Experiences</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#booking" class="nav-btn">Book Trip</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="city-detail-root"></main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">Chalo <span>UP</span> Ghuma De</div>
+          <p>Travel through heritage, spirituality, food and culture in the heart of Uttar Pradesh.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#places">Places</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="spirituality.html">Spirituality</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@chaloupghumade.in</li>
+            <li>+91 98765 43210</li>
+            <li>Lucknow, Uttar Pradesh</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Chalo UP Ghuma De</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

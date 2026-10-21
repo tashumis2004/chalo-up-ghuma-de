@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chalo UP Ghuma De | Explore Uttar Pradesh</title>
+    <meta name="description" content="Explore Uttar Pradesh with Chalo UP Ghuma De. Visit spirituality, heritage, culture and famous food experiences across the state." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandNavy: '#081b2b',
+              brandGold: '#d4a94d',
+              brandCream: '#f7f1e8'
+            },
+            boxShadow: {
+              luxe: '0 24px 48px rgba(8, 27, 43, 0.14)'
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="stylep.css" />
+  </head>
+  <body class="bg-[#f7f1e8] text-slate-800 antialiased">
+    <header class="site-header">
+      <div class="container nav-wrap mx-auto max-w-7xl">
+        <div class="brand">Chalo <span>UP</span> Ghuma De</div>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false">Places</button>
+            <div class="nav-dropdown-menu" aria-label="City list">
+              <a href="city-details.html?city=taj">Taj Mahal</a>
+              <a href="city-details.html?city=varanasi">Varanasi</a>
+              <a href="city-details.html?city=lucknow">Lucknow</a>
+              <a href="city-details.html?city=ayodhya">Ayodhya</a>
+            </div>
+          </div>
+          <a href="#experiences">Experiences</a>
+          <a href="personal-lifestyle/index.html">Lifestyle</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#booking" class="nav-btn">Book Trip</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid mx-auto max-w-7xl">
+          <div class="hero-text">
+            <span class="tag">Luxury Travel in Uttar Pradesh</span>
+            <h1>Luxury journeys through the soul of India.</h1>
+            <p>
+              Discover iconic ghats, royal heritage, vibrant culture, world-famous food,
+              and curated experiences designed for meaningful, memorable travel across Uttar Pradesh.
+            </p>
+
+            <div class="hero-actions flex flex-col gap-4 sm:flex-row">
+              <a href="#places" class="btn btn-primary">Explore Places</a>
+              <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+            </div>
+
+            <div class="trust-row flex flex-wrap gap-3 sm:gap-4" aria-label="Travel trust indicators">
+              <span>✔ Curated Itineraries</span>
+              <span>✔ Private Guides</span>
+              <span>✔ Certified Support</span>
+            </div>
+
+            <ul class="hero-stats flex flex-wrap gap-4 sm:gap-6">
+              <li><strong>5+</strong><span>Top Cities</span></li>
+              <li><strong>30k+</strong><span>Travelers</span></li>
+              <li><strong>4.8/5</strong><span>Guest Rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img src="assets/banner.jpg" alt="Uttar Pradesh travel cover" />
+            </div>
+            <div class="floating-card">
+              <span>Best Season</span>
+              <strong>October - March</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="places">
+        <div class="container mx-auto max-w-7xl">
+          <div class="section-head">
+            <p class="eyebrow">Famous Places</p>
+            <h2>Discover the most loved destinations in UP</h2>
+          </div>
+
+          <div class="place-grid grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <article class="place-card" data-place="taj">
+              <img src="assets/taj.jpg" alt="Taj Mahal" />
+              <div class="card-content">
+                <h3>Taj Mahal</h3>
+                <p>One of the most beautiful monuments in the world, located in Agra.</p>
+                <button class="place-btn" type="button">Know More</button>
+              </div>
+            </article>
+
+            <article class="place-card" data-place="varanasi">
+              <img src="assets/varanasi.jpg" alt="Varanasi" />
+              <div class="card-content">
+                <h3>Varanasi</h3>
+                <p>The spiritual city known for its ghats, rituals and peaceful evenings.</p>
+                <button class="place-btn" type="button">Know More</button>
+              </div>
+            </article>
+
+            <article class="place-card" data-place="lucknow">
+              <img src="assets/lucknow.jpg" alt="Lucknow" />
+              <div class="card-content">
+                <h3>Lucknow</h3>
+                <p>Famous for heritage, culture, warm hospitality and rich Awadhi food.</p>
+                <button class="place-btn" type="button">Know More</button>
+              </div>
+            </article>
+
+            <article class="place-card" data-place="ayodhya">
+              <img src="assets/ayodhya.jpg" alt="Ayodhya" />
+              <div class="card-content">
+                <h3>Ayodhya</h3>
+                <p>Known for its religious importance, temples, and peaceful atmosphere.</p>
+                <button class="place-btn" type="button">Know More</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experiences" id="experiences">
+        <div class="container experience-grid mx-auto max-w-7xl">
+          <div class="experience-copy">
+            <p class="eyebrow">Why Travel with Us</p>
+            <h2>Experience culture, comfort and unforgettable memories.</h2>
+            <p>
+              We make your journey through Uttar Pradesh smooth, spiritual, and full of local flavor.
+              Explore heritage, food, and stories from the heart of India.
+            </p>
+
+            <ul class="experience-list">
+              <li>Custom city tours and guided visits</li>
+              <li>Traditional food and heritage experiences</li>
+              <li>Safe and comfortable travel planning</li>
+            </ul>
+          </div>
+
+          <div class="experience-boxes grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            <div class="info-box info-box-culture">
+              <h3>Culture</h3>
+              <p>Temples, festivals, art and tradition from every corner of the state.</p>
+              <a class="info-link" href="culture.html">Explore More</a>
+            </div>
+            <div class="info-box info-box-food">
+              <h3>Food</h3>
+              <p>Enjoy famous dishes like kebabs, biryani, chaat and sweet treats.</p>
+              <button class="food-trigger" type="button">See Famous Foods</button>
+            </div>
+            <div class="info-box info-box-spiritual">
+              <h3>Spirituality</h3>
+              <p>Visit ghats, temples and sacred cities that bring peace and reflection.</p>
+              <a class="info-link" href="spirituality.html">Explore More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lifestyle-section" id="lifestyle">
+        <div class="container mx-auto max-w-7xl">
+          <div class="section-head">
+            <p class="eyebrow">Personal & Lifestyle</p>
+            <h2>Travel thoughtfully and live beautifully</h2>
+          </div>
+
+          <div class="lifestyle-grid grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="lifestyle-card">
+              <div class="lifestyle-emoji">🌿</div>
+              <h3>Slow mornings</h3>
+              <p>Enjoy peaceful starts with mindful rituals and local discovery.</p>
+              <a href="personal-lifestyle/index.html">Read more</a>
+            </article>
+
+            <article class="lifestyle-card">
+              <div class="lifestyle-emoji">✈️</div>
+              <h3>Travel light</h3>
+              <p>Pack smart and move through each destination with ease and comfort.</p>
+              <a href="personal-lifestyle/index.html">Explore ideas</a>
+            </article>
+
+            <article class="lifestyle-card">
+              <div class="lifestyle-emoji">💡</div>
+              <h3>Meaningful living</h3>
+              <p>Build routines inspired by calm, reflection, and richer experiences.</p>
+              <a href="personal-lifestyle/index.html">See story</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section signature-section">
+        <div class="container mx-auto max-w-7xl">
+          <div class="section-head">
+            <p class="eyebrow">Signature Experiences</p>
+            <h2>Curated journeys for unforgettable memories</h2>
+          </div>
+
+          <div class="signature-grid grid gap-6 md:grid-cols-3">
+            <article class="signature-card signature-card-highlight">
+              <span class="signature-badge">Private</span>
+              <h3>Golden Triangle Escape</h3>
+              <p>Agra, Lucknow and heritage stays tailored for elegant, stress-free travel.</p>
+              <strong>4 Nights • From ₹14,999</strong>
+            </article>
+
+            <article class="signature-card">
+              <span class="signature-badge">Sacred</span>
+              <h3>Spiritual Sojourn</h3>
+              <p>Temple trails, sunrise ghats and peaceful retreats in sacred UP.</p>
+              <strong>3 Nights • From ₹11,499</strong>
+            </article>
+
+            <article class="signature-card">
+              <span class="signature-badge">Chef's Pick</span>
+              <h3>Food & Culture Trail</h3>
+              <p>Royal heritage dining, local markets and immersive cultural moments.</p>
+              <strong>5 Nights • From ₹18,799</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container mx-auto max-w-7xl">
+          <div class="section-head">
+            <p class="eyebrow">Photo Gallery</p>
+            <h2>Moments from the heart of Uttar Pradesh</h2>
+          </div>
+
+          <div class="gallery-grid grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            <img src="assets/gallery-1.jpg" alt="UP travel scene" />
+            <img src="assets/gallery-2.jpg" alt="UP heritage scene" />
+            <img src="assets/gallery-3.jpg" alt="UP cultural scene" />
+            <img src="assets/gallery-4.jpg" alt="UP landscape" />
+            <img src="assets/gallery-5.jpg" alt="UP city view" />
+            <img src="assets/gallery-6.jpg" alt="UP spiritual destination" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section packages-section">
+        <div class="container mx-auto max-w-7xl">
+          <div class="section-head">
+            <p class="eyebrow">Popular Packages</p>
+            <h2>Choose the journey that fits your dream trip</h2>
+          </div>
+
+          <div class="package-grid grid gap-6 md:grid-cols-3">
+            <article class="package-card package-card-highlight">
+              <span class="package-badge">Most Loved</span>
+              <h3>Heritage Trail</h3>
+              <p class="package-price">From ₹6,999</p>
+              <ul>
+                <li>Agra + Lucknow</li>
+                <li>Guided heritage walk</li>
+                <li>Food & culture package</li>
+              </ul>
+              <button class="btn btn-primary" type="button">Book Now</button>
+            </article>
+
+            <article class="package-card">
+              <h3>Spiritual Circuit</h3>
+              <p class="package-price">From ₹5,499</p>
+              <ul>
+                <li>Varanasi + Ayodhya</li>
+                <li>Temple visits</li>
+                <li>Sunrise ghat experience</li>
+              </ul>
+              <button class="btn btn-secondary" type="button">View Details</button>
+            </article>
+
+            <article class="package-card">
+              <h3>Royal UP Escape</h3>
+              <p class="package-price">From ₹8,299</p>
+              <ul>
+                <li>Lucknow + Agra</li>
+                <li>Luxury stays</li>
+                <li>Heritage sightseeing</li>
+              </ul>
+              <button class="btn btn-secondary" type="button">Explore</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container testimonial-wrap mx-auto max-w-7xl">
+          <div class="section-head left-align">
+            <p class="eyebrow">Traveler Stories</p>
+            <h2>What our guests say</h2>
+          </div>
+
+          <div class="testimonial-grid grid gap-6 md:grid-cols-3">
+            <article class="testimonial-card">
+              <p>
+                “We covered Varanasi, Ayodhya and Lucknow in one unforgettable trip. Every moment felt peaceful and rich in culture.”
+              </p>
+              <div class="testimonial-person">
+                <strong>Neha Sharma</strong>
+                <span>Family Trip</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <p>
+                “The food suggestions were amazing and the heritage walk in Agra was beautifully planned.”
+              </p>
+              <div class="testimonial-person">
+                <strong>Rahul Verma</strong>
+                <span>Couple Tour</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <p>
+                “Well organized, safe, and full of local stories. It felt like traveling with a friend who knows the place deeply.”
+              </p>
+              <div class="testimonial-person">
+                <strong>Ananya Singh</strong>
+                <span>Spiritual Journey</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="booking">
+        <div class="container faq-wrap mx-auto max-w-7xl">
+          <div class="section-head left-align">
+            <p class="eyebrow">Plan Your Trip</p>
+            <h2>Common questions before you go</h2>
+          </div>
+
+          <div class="faq-grid grid gap-6 md:grid-cols-3">
+            <div class="faq-item">
+              <h3>What is the best time to visit Uttar Pradesh?</h3>
+              <p>October to March is ideal for comfortable weather and sightseeing.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is UP good for spiritual travel?</h3>
+              <p>Yes, cities like Varanasi, Ayodhya and Prayagraj are rich in spiritual experience.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Can I visit the major cities in a short trip?</h3>
+              <p>Yes, 4–6 day itineraries can cover Agra, Lucknow, Varanasi and Ayodhya nicely.</p>
+            </div>
+          </div>
+
+          <div class="booking-panel">
+            <div>
+              <p class="eyebrow">Need a customized trip?</p>
+              <h3>Let us help plan your ideal UP getaway.</h3>
+            </div>
+            <form class="booking-form flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+             <input type="text" placeholder="Your name" aria-label="Your name" class="flex-1 min-w-[180px]" />
+             <input type="email" placeholder="Email address" aria-label="Email address" class="flex-1 min-w-[180px]" />
+              <button type="submit" class="btn btn-primary">Plan My Trip</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">Chalo <span>UP</span> Ghuma De</div>
+          <p>Travel through heritage, spirituality, food and culture in the heart of Uttar Pradesh.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#places">Places</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="spirituality.html">Spirituality</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@chaloupghumade.in</li>
+            <li>+91 98765 43210</li>
+            <li>Lucknow, Uttar Pradesh</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Chalo UP Ghuma De</p>
+      </div>
+    </footer>
+
+    <div class="floating-cta" aria-label="Quick trip inquiry">
+      <a href="#booking" class="floating-cta-link">Plan My Trip</a>
+      <a href="tel:+919876543210" class="floating-cta-call">Call Now</a>
+    </div>
+
+    <div class="food-modal" id="food-modal" aria-hidden="true">
+      <div class="food-modal-backdrop" data-close-modal="true"></div>
+      <div class="food-modal-card" role="dialog" aria-modal="true" aria-labelledby="food-modal-title">
+        <button class="modal-close" type="button" aria-label="Close modal">×</button>
+        <div class="modal-image-wrap">
+          <img id="food-modal-image" src="" alt="Famous food" />
+        </div>
+        <div class="modal-content-wrap">
+          <p class="eyebrow">Famous Food</p>
+          <h3 id="food-modal-title">Dish Name</h3>
+          <p id="food-modal-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
